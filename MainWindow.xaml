@@ -1,0 +1,17 @@
+﻿<Window x:Class="Komisches_Datei_Kopieren_Dings.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Komisches_Datei_Kopieren_Dings"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="From:" Margin="40,77,623,200"/>
+        <TextBox x:Name="FromPathBox" IsReadOnly="True" Margin="44,109,451,280" MouseDown="FromPathBox_MouseDown"/>
+        <Label Content="To:" Margin="417,77,267,200"/>
+        <TextBox x:Name="ToPathBox" IsReadOnly="True" Margin="422,109,62,280" MouseDown="ToPathBox_MouseDown"/>
+        <Button x:Name="FromPathButton" Content="..." HorizontalAlignment="Left" Margin="320,109,0,0" VerticalAlignment="Top" Height="22" Width="45" Click="FromPathButton_Click"/>
+        <Button x:Name="ToPathButton" Content="..." HorizontalAlignment="Left" Margin="707,109,0,0" VerticalAlignment="Top" Height="22" Width="45" Click="ToPathButton_Click"/>
+    </Grid>
+</Window>
